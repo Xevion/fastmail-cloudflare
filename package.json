@@ -1,7 +1,7 @@
 {
   "name": "fastmail-cloudflare",
   "version": "0.0.1",
-  "description": "Quickly setup Fastmail with Cloudflare",
+  "description": "Rapidly onboard a new Cloudflare-managed domain with FastMail ",
   "scripts": {
     "start": "tsx src/index.ts"
   },

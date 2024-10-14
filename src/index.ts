@@ -8,6 +8,8 @@ const cloudflare = new Cloudflare({
   apiToken: process.env.CLOUDFLARE_API_TOKEN,
 });
 
+// TODO: Choose domain from the list of zones via prompt
+// TODO: Verify the zone exists, confirm with user that the zone is correct.
 const targetZone = process.env.TARGET_ZONE_ID!;
 const commentTag = `${packageJson.name} v${packageJson.version}`;
 
@@ -209,6 +211,12 @@ async function handleSpfRecords() {
 }
 
 async function main() {
+  // TODO: Environment variable validation, type checking
+  // TODO: Proper stdout/stderr logging, format, color
+  // TODO: Pre-run permission checks
+  // TODO: -y --confirm-all flag
+  // TODO: DMARC record (add, remove, delete, change) + doclink prompt, --dmarc flag
+
   // If target zone is not provided, list all zones with name + id
   if (!targetZone) {
     const response = await cloudflare.zones.list({ per_page: 2 });

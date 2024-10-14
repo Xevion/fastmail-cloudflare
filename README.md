@@ -12,9 +12,13 @@ This is a simple script to update the DNS records of a domain in Cloudflare to p
   - Newer or older may work, but is untested.
 - [pnpm][pnpm]
 - Cloudflare API Token
-  - `DNS Settings:Edit` permission for the zone you want to onboard.
+  - `DNS Settings:Edit` permission.
+  - Ensure the token has access to the domain in question.
   - Create one [here][cf-token].
 - The domain you want to onboard, managed by Cloudflare.
+
+<!-- TODO: Test Node.js versions -->
+<!-- TODO: Test minimum permission requirements -->
 
 ## Usage
 
