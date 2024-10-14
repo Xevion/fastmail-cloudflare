@@ -1,0 +1,18 @@
+{
+  "name": "fastmail-cloudflare",
+  "version": "0.0.1",
+  "description": "Quickly setup Fastmail with Cloudflare",
+  "scripts": {
+    "start": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "cloudflare": "^3.5.0",
+    "dotenv": "^16.4.5",
+    "iter-ops": "^3.5.0",
+    "prettier": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "tsx": "^4.19.1"
+  }
+}
